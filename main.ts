@@ -92,6 +92,16 @@ const CANDIDATES: string[] = [
   "I told my Wi-Fi router we're on a break; it still won't give me space, just slower speeds.",
   // Therapist and plants: only the dead ones judge.
   "I told my therapist I talk to my plants; she asked if they answer, and I said only the dead ones judge me.",
+  // Therapy, billed by the hour: the feelings go on the invoice too.
+  "My therapist charges by the hour, so I've started billing my feelings as overtime.",
+  // Calendar: even the day off needs a meeting first.
+  "I asked my calendar for a day off; it scheduled a meeting to discuss it.",
+  // Plants: the complaint is formal, the care is not.
+  "My plants filed a complaint: too much water, not enough conversation.",
+  // Morning person: the plants are not convinced.
+  "I told my plants I'm a morning person now; they wilted out of solidarity.",
+  // To-do list: a negotiation neither side is winning.
+  "My to-do list and I agreed to disagree; it keeps growing, and I keep nodding politely.",
 ];
 
 // Concrete, specific nouns: a line that names real things earns specificity.
