@@ -229,7 +229,11 @@ function isValid(text: string): boolean {
   if (!text.endsWith(".")) return false;
   if (/\n/.test(text)) return false; // one line only
   if (/\s{2,}/.test(text)) return false;
-  if (/free|subscribe|click|buy now|http/.test(text.toLowerCase())) return false;
+  // No promo or link bait. Word boundaries matter: a plain /free/ would
+  // wrongly reject a line that merely contains "freedom", and /http/ would
+  // reject any mention of the word; only real links and calls to action
+  // are barred.
+  if (/\bfree\b|\bsubscribe\b|\bclick\b|buy now|https?:\/\//.test(text.toLowerCase())) return false;
   return true;
 }
 
